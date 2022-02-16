@@ -13,8 +13,9 @@
             <input type="text" name="name" id="name">
             
             <button type="submit">Register name</button>
+            <p>${message}</p>
         </form>
         
-        <p>${message}</p>
+        <!--<p>${message}</p> -->
     </body>
 </html>

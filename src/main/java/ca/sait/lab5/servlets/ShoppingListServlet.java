@@ -34,8 +34,10 @@ public class ShoppingListServlet extends HttpServlet {
                 session.invalidate();
                  
                 request.setAttribute("message", "Yor are successfully logged out.");
+                getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
             } else {
-                response.sendRedirect("ShoppingList");
+                //response.sendRedirect("ShoppingList");
+                getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
                 return;
             }
         }
